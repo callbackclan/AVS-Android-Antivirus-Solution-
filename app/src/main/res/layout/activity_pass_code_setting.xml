@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENABLE PIN"
+            android:textSize="20sp"
+            android:textOn="ON"
+            android:textOff="OFF"
+            android:thumb = "@drawable/sw_thumb"
+            app:track="@drawable/sw_track"
+            android:textColor="@color/scanBtnBackground"
+            android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/scanBtnBackground"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="Change PIN"
+        android:id="@+id/ChangePinText"/>
+
+    <TextView
+        android:id="@+id/forgotPinText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Forgot PIN"
+        android:textColor="@color/danger"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>
