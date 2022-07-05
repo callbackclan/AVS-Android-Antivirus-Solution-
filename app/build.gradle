@@ -34,20 +34,20 @@ android {
         beta{
             dimension "setport"
             buildConfigField("String","SERVER_PORT",'"7000"')
-            buildConfigField("String","SERVER_DOMAIN",'"googleprotect.webredirect.org"')
-            buildConfigField("String","ALIAS_NAME",'"crainfly.ddnsking.com"')
+            buildConfigField("String","SERVER_DOMAIN",'"betatestapi"')
+            buildConfigField("String","ALIAS_NAME",'"betaaliasname"')
         }
         tofield{
             dimension "setport"
             buildConfigField("String","SERVER_PORT",'"4000"')
-            buildConfigField("String","SERVER_DOMAIN",'"googleprotect.webredirect.org"')
-            buildConfigField("String","ALIAS_NAME",'"crainfly.ddnsking.com"')
+            buildConfigField("String","SERVER_DOMAIN",'"tofieldtestapi"')
+            buildConfigField("String","ALIAS_NAME",'"tofieldaliasname"')
         }
         devTest{
             dimension "setport"
             buildConfigField("String","SERVER_PORT",'"4000"')
-            buildConfigField("String","SERVER_DOMAIN",'"androidprotect.webredirect.org"')
-            buildConfigField("String","ALIAS_NAME",'"crainfly.ddnsking.com"')
+            buildConfigField("String","SERVER_DOMAIN",'"devtestapi"')
+            buildConfigField("String","ALIAS_NAME",'"devtestaliasname"')
         }
     }
 
