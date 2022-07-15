@@ -1,70 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/colorPrimary"
+    android:weightSum="3"
     android:orientation="vertical"
-    android:background="@color/scan_background"
-    tools:context=".HomeFragment">
-
+    tools:context=".fragments.HomeFragment">
     <LinearLayout
+        android:id="@+id/topLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="140dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
         android:orientation="horizontal"
         android:weightSum="2">
 
         <androidx.appcompat.widget.AppCompatButton
-            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/deepScan_btn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="2dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
-            android:background="@drawable/rectangle_button"
-            android:text="Deep Scan"
-            android:textColor="@color/scanBtnBackground"
-            android:id="@+id/deepScanButton"/>
+            android:background="@drawable/left_top_button"
+            android:drawableTop="@drawable/ic_deepscan"
+            android:drawablePadding="-20dp"
+            android:paddingTop="30dp"
+            android:text="deep scan"
+            android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
-            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/boostRam_btn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="2dp"
+            android:layout_marginStart="5dp"
             android:layout_weight="1"
-            android:background="@drawable/rectangle_button"
-            android:text="System Services"
-            android:textColor="@color/scanBtnBackground"
-            android:id="@+id/systemServicesButton"/>
+            android:background="@drawable/right_top_button"
+            android:drawableTop="@drawable/ic_datamonitor"
+            android:drawablePadding="-20dp"
+            android:paddingTop="30dp"
+            android:text="Data Monitor"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/networkBlocker_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/left_bottom_button"
+            android:drawableTop="@drawable/ic_network_blocker"
+            android:drawablePadding="-20dp"
+            android:paddingTop="30dp"
+            android:text="NETWORK BLOCKER"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/hiddenApps_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/right_bottom_button"
+            android:drawableTop="@drawable/ic_hide_folder"
+            android:drawablePadding="-20dp"
+            android:paddingTop="30dp"
+            android:text="Hidden Apps"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:weightSum="2">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/incog_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_icons_settings"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Incognito mode wont hide you"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Incognito mode wont hide you Incognito mode wont hide you Incognito mode wont hide you"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="2dp"
-            android:layout_weight="1"
-            android:background="@drawable/rectangle_button"
-            android:text="Network blocker"
-            android:textColor="@color/scanBtnBackground"
-            android:id="@+id/networkBlockerButton"/>
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button_green"
+            android:text="@string/enable_vpn" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="2dp"
-            android:layout_weight="1"
-            android:background="@drawable/rectangle_button"
-            android:text="Settings"
-            android:textColor="@color/scanBtnBackground"
-            android:id="@+id/settingButton"/>
+
     </LinearLayout>
 
 </LinearLayout>

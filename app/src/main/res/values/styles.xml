@@ -1,0 +1,74 @@
+<resources>
+    <attr name="colorOn" format="reference" />
+    <attr name="colorOff" format="reference" />
+    <attr name="expander" format="reference" />
+    <attr name="iconQueue" format="reference" />
+    <attr name="iconMetered" format="reference" />
+    <attr name="iconSettings" format="reference" />
+    <attr name="iconDatasaver" format="reference" />
+    <attr name="iconLaunch" format="reference" />
+    <attr name="iconDelete" format="reference" />
+    <attr name="iconPlay" format="reference" />
+    <attr name="iconPause" format="reference" />
+
+    <style name="BaseThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="BaseThemeLight" parent="Theme.AppCompat">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="TextLarge" parent="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <style name="TextMedium" parent="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+    <style name="TextSmall" parent="@android:style/TextAppearance.DeviceDefault.Small" />
+
+    <style name="TextTitle" parent="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+    <style name="AppThemeTeal" parent="BaseThemeDark">
+    </style>
+
+    <style name="AppThemeTealDark" parent="BaseThemeLight">
+    </style>
+
+    <style name="AppThemeBlue" parent="BaseThemeDark">
+    </style>
+
+    <style name="AppThemeBlueDark" parent="BaseThemeLight">
+
+    </style>
+
+    <style name="AppThemePurple" parent="BaseThemeDark">
+
+    </style>
+
+    <style name="AppThemePurpleDark" parent="BaseThemeLight">
+
+    </style>
+
+    <style name="AppThemeAmber" parent="BaseThemeDark">
+
+    </style>
+
+    <style name="AppThemeAmberDark" parent="BaseThemeLight">
+
+    </style>
+
+    <style name="AppThemeOrange" parent="BaseThemeDark">
+
+    </style>
+
+    <style name="AppThemeOrangeDark" parent="BaseThemeLight">
+
+    </style>
+
+    <style name="AppThemeGreen" parent="BaseThemeDark">
+
+    </style>
+
+    <style name="AppThemeGreenDark" parent="BaseThemeLight">
+
+    </style>
+</resources>

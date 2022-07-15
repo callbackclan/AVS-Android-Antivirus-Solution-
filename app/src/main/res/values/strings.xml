@@ -1,5 +1,180 @@
 <resources>
-    <string name="app_name">antivirus</string>
+    <string name="app_name">AVS</string>
+    <string name="enable_vpn">Enable VPN</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stop_scanning">Stop Scanning</string>
+    <string name="scanning_in_progress">Scanning in Progress ...</string>
+    <string name="file">File Name</string>
+    <string name="hidden_apps">Hidden Apps</string>
+
+    <string name="app_description">CustomGuard provides simple and advanced ways to block access to the internet - no root required. Apps and addresses can individually be allowed or denied access to your Wi-Fi and/or mobile connection.</string>
+    <string name="app_copyright" translatable="false">Copyright By Scholar</string>
+    <string name="app_android">CustomGuard requires Android 5.1 or later</string>
+    <string name="app_eula" translatable="false">Best Software</string>
+    <string name="app_privacy"><a href="https://www.gooogle.com">Privacy policy</a></string>
+    <string name="app_support">Customguard needs your help. Tap to purchase pro features to keep the project going.</string>
+    <string name="app_xposed">Xposed causes too many crashes, which might result in customguard being removed from the Google Play Store, therefore customguard isn\'t supported while Xposed is installed</string>
+    <string name="app_first">Great care has been taken to develop and test Customguard, however it is impossible to guarantee Customguard will work correctly on every device.</string>
+    <string name="app_agree">I agree</string>
+    <string name="app_disagree">I disagree</string>
+
+    <string name="menu_reset">Reset</string>
+
+    <string name="channel_foreground">Running services</string>
+    <string name="channel_notify">General notifications</string>
+    <string name="channel_access">Access notifications</string>
+
+    <string name="setting_lockdown">Lockdown traffic</string>
+    <string name="msg_datasaving">For consistent results, the Android data saving options should be disabled for Customguard
+\n\nIn the next dialog, enable the options \"Background data\" and \"Unrestricted data usage\"</string>
+    <string name="msg_sure">Are you sure?</string>
+    <string name="msg_on">Powering down your device with Customguard enabled, will automatically start Customguard on powering up your device</string>
+    <string name="msg_vpn_cancelled">VPN connection cancelled\nDid you configure another VPN to be an always-on VPN?</string>
+
+    <string name="msg_doze">For consistent results, the Android battery optimizations should be disabled for Customguard.
+\n\nIn the next dialog, select \"All apps\" at the top, tap on Customguard in the list and select and confirm \"Don\'t optimize\".</string>
+    <string name="msg_started">Enforcing rules</string>
+    <string name="msg_disabled">Customguard is disabled, use the switch above to enable customguard</string>
+    <string name="msg_usage">You can allow (greenish) or deny (reddish) Wi-Fi or mobile internet access by tapping on the icons next to an app</string>
+    <string name="msg_fairemail">If you installed Customguard to protect your privacy, you might be interested in <a href="https://www.google.com">Google</a>, an open source, privacy friendly email app, too</string>
+    <string name="msg_whitelist">Internet access is allowed by default (blacklist mode), this can be changed in the settings</string>
+    <string name="msg_push">Incoming (push) messages are mostly handled by the system component Play services, which is allowed internet access by default</string>
+    <string name="msg_system">Managing all (system) apps can be enabled in the settings</string>
+    <string name="msg_queue">Customguard is busy</string>
+    <string name="msg_always_on">Another VPN is set as Always-on VPN</string>
+    <string name="msg_private_dns">Turn off "Private DNS" in Android network settings to use Customguard in filtering mode</string>
+    <string name="msg_vpn">Customguard uses a local VPN to filter internet traffic.
+For this reason, please allow a VPN connection in the next dialog.
+Your internet traffic is not being sent to a remote VPN server.</string>
+    <string name="msg_packages">%1$d allowed, %2$d blocked</string>
+    <string name="msg_metered">Network is metered</string>
+
+    <string name="msg_hosts">%1$d allowed, %2$d blocked, %3$d hosts</string>
+    <string name="msg_waiting">Waiting for event</string>
+    <string name="msg_revoked">CustomGuard has been disabled, likely by using another VPN based app</string>
+    <string name="msg_installed">\'%1$s\' installed</string>
+    <string name="msg_dimming">If you cannot press OK in the next dialog, another (screen dimming) app is likely manipulating the screen.</string>
+
+    <string name="msg_installed_n">Has been installed</string>
+    <string name="msg_access">%1$s attempted internet access</string>
+    <string name="msg_access_n">Attempted internet access</string>
+    <string name="msg_autostart">CustomGuard could not start automatically. This is likely because of a bug in your Android version.</string>
+    <string name="msg_error">An unexpected error has occurred: \'%s\'</string>
+    <string name="msg_start_failed">Android refused to start the VPN service at this moment. This is likely because of a bug in your Android version.</string>
+    <string name="msg_try">Try CustomGuard</string>
+    <string name="msg_kbsec">%7.3f KB/s</string>
+    <string name="msg_mbsec">%7.3f MB/s</string>
+    <string name="msg_kb">%1$7.3f&#9650; %2$7.3f&#9660; KB</string>
+    <string name="msg_mb">%1$7.3f&#9650; %2$7.3f&#9660; MB</string>
+    <string name="msg_gb">%1$7.3f&#9650; %2$7.3f&#9660; GB</string>
+    <string name="msg_count">%dx</string>
+    <string name="msg_filter">Using filtering will cause Android to attribute data and power usage to CustomGuard - Android assumes the data and power are being used by CustomGuard, rather than the original apps</string>
+    <string name="msg_filter4">Android 4 requires filtering to be enabled</string>
+    <string name="msg_clear_rules">This will reset the rules and conditions to their default values</string>
+    <string name="msg_reset_access">This will delete access attempt log lines without allow/block rules</string>
+    <string name="msg_update">Update available, tap to download</string>
+    <string name="msg_issue">Please describe the problem and indicate the time of the problem:</string>
+    <string name="msg_always_on_lockdown">Turn off "Block connections without VPN" in Android VPN settings to use CustomGuard in filtering mode</string>
+
+    <string name="menu_log">Show log</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="title_internet">has no internet permission</string>
+    <string name="title_disabled">is disabled</string>
+    <string name="title_messaging">Incoming messages are received by Google Play services and not by this app and can therefore not be blocked by blocking this app</string>
+    <string name="title_download">Downloads are performed by the download manager and not by this app and can therefore not be blocked by blocking this app</string>
+    <string name="title_apply">Apply rules and conditions</string>
+    <string name="title_conditions">Conditions</string>
+    <string name="title_screen_wifi">Allow Wi-Fi when screen is on</string>
+    <string name="title_screen_other">Allow mobile when screen is on</string>
+    <string name="title_roaming_symbol">R</string>
+    <string name="title_roaming">Block when roaming</string>
+    <string name="title_lockdown">Allow in lockdown mode</string>
+    <string name="title_related">Filter related</string>
+    <string name="title_access">Access attempts</string>
+    <string name="title_precedence">Access rules take precedence over other rules</string>
+    <string name="title_options">Options</string>
+    <string name="title_notify">Notify internet access attempts</string>
+
+    <string name="title_logging_disabled">Logging or filtering is not enabled</string>
+    <string name="title_logging_enabled">Logging and filtering are enabled</string>
+    <string name="title_logging_configure">Configure</string>
+
+    <string name="title_enable_logging">Enable logging of blocked addresses only</string>
+    <string name="title_enable_filtering">Enable filtering to log allowed addresses too</string>
+    <string name="title_enable_notify">Enable access notifications for newly logged addresses</string>
+    <string name="title_enable_help0">These settings are global settings that apply to all apps</string>
+    <string name="title_enable_help1">Filtering is also required to allow or block individual addresses</string>
+    <string name="title_enable_help2">Enabling logging (less) or filtering (more) might increase battery usage and might affect network speed</string>
+
+    <string name="title_rate">Rate</string>
+    <string name="title_allow">Allow</string>
+    <string name="title_block">Block</string>
+
+    <string name="title_allow_wifi">Allow Wi-Fi</string>
+    <string name="title_block_wifi">Block Wi-Fi</string>
+    <string name="title_allow_other">Allow mobile</string>
+    <string name="title_block_other">Block mobile</string>
+    <string name="title_root">root</string>
+    <string name="title_mediaserver">mediaserver</string>
+    <string name="title_gpsdaemon" translatable="false">GPS daemon</string>
+    <string name="title_dnsdaemon" translatable="false">DNS daemon</string>
+    <string name="title_nobody">nobody</string>
+    <string name="title_dontask">Don\'t ask again</string>
+
+    <string name="title_log_whois">Whois %1$s</string>
+    <string name="title_log_port">Port %1$d</string>
+    <string name="title_log_copy">Copy</string>
+
+    <string name="title_pro">Pro features</string>
+    <string name="title_pro_description">The following pro features are available:</string>
+    <string name="title_pro_log">View blocked traffic log</string>
+    <string name="title_pro_filter">Filter network traffic</string>
+    <string name="title_pro_notify">New app notifications</string>
+    <string name="title_pro_speed">Network speed graph notification</string>
+    <string name="title_pro_theme">Appearance (theme, colors)</string>
+    <string name="title_pro_all">All above pro features</string>
+    <string name="title_pro_dev">Support development</string>
+    <string name="title_pro_buy">Buy</string>
+    <string name="title_pro_bought">Enabled</string>
+    <string name="title_pro_unavailable">Unavailable</string>
+    <string name="title_pro_details">Tap on a title for more information</string>
+    <string name="title_pro_challenge">Challenge</string>
+    <string name="title_pro_reponse">Response</string>
+    <string name="title_pro_subscription">
+        A monthly subscriptions of 1 or 2 euros (excluding local taxes) will activate all pro features.
+        You can cancel or manage a subscription via the subscriptions tab in the Play store app.
+    </string>
+
+    <string name="fingerprint" translatable="false">ef46f813d2c8a064d72c936b9b96d1cccc989378</string>
+    <string name="no_connection">No Internet Connection</string>
+
+
+    <!--DATA monitor related  -->
+    <string name="label_tethering">Mobile Hotspot</string>
+    <string name="package_tethering">com.android.tethering</string>
+    <string name="label_removed">Removed Apps</string>
+    <string name="package_removed">com.android.removed</string>
+    <string name="label_system_apps">System Apps</string>
+    <string name="label_user_apps">User Apps</string>
+    <string name="package_system">com.android.systemui</string>
+    <string name="package_user">com.android.userui</string>
+    <string name="label_today">Today</string>
+    <string name="label_yesterday">Yesterday</string>
+    <string name="label_this_month">This Month</string>
+    <string name="label_last_month">Last Month</string>
+    <string name="label_this_year">This Year</string>
+    <string name="label_all_time">All Time</string>
+    <string name="title_app_data_usage_type">Select Type</string>
+    <string name="label_mobile_data">Mobile Data</string>
+    <string name="label_wifi">Wifi</string>
+    <string name="app_label_package_name">Package name : %1$s</string>
+    <string name="app_label_uid">Uid : %1$d</string>
+    <string name="app_name_placeholder">App Name</string>
+    <string name="app_data_usage_placeholder">00 MB</string>
+    <string name="label_sent">sent</string>
+    <string name="label_received">received</string>
+    <string name="usage_time_label">%1$d %2$s %3$d %4$s</string>
+    <string name="reset_time">%1$d/%2$d/%3$d %4$d:%5$d:00</string>
 </resources>
