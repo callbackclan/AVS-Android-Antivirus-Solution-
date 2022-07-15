@@ -3,18 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".BasicScanResultFragment"
-    android:background="@color/lightDanger"
+    android:background="?attr/colorPrimary"
+    tools:context=".fragments.BasicScanResultFragment"
     >
 
     <ExpandableListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/basicScanResult"
-        android:divider="@color/lightDanger"
+        android:divider="?attr/colorPrimary"
         android:groupIndicator="@null"
-        android:dividerHeight="2dp"
-        android:background="@color/white"
+        android:dividerHeight="10dp"
          />
 
 </LinearLayout>

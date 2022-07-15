@@ -1,50 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:gravity="top"
-        android:id="@+id/rootLayout"
-        android:background="@color/scan_background"
-        android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:weightSum="3"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center">
-
+        android:layout_height="260dp"
+        >
         <com.google.android.material.progressindicator.CircularProgressIndicator
-            android:id="@+id/scanProgress"
+            android:id="@+id/mainProgressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            app:indicatorColor="@color/scanBtnBackground"
-            app:indicatorSize="200dp"
-            app:trackColor="@color/white"
+            android:layout_marginTop="50dp"
+            app:indicatorColor="@color/yellow"
+            app:indicatorSize="180dp"
+            app:trackColor="@color/lightIndigo"
             app:trackThickness="5dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/scanButton"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignStart="@+id/mainProgressBar"
+            android:layout_alignTop="@+id/mainProgressBar"
             android:layout_centerInParent="true"
-            android:background="@drawable/round_botton_green"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_button_pink"
             android:text="SCAN"
-            android:textColor="@color/scan_background"
+            android:textColor="?attr/colorOnSecondary"
             android:textSize="35sp" />
-
     </RelativeLayout>
+
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        android:layout_weight="1"
         android:id="@+id/homeFragment">
-
     </FrameLayout>
 
-    </LinearLayout>
+
+
+</LinearLayout>
